@@ -1,0 +1,71 @@
+.denWrapper {
+max-width: 780px !important;
+margin: 20px auto !important;
+box-sizing: border-box !important;
+}
+
+.bigBox {
+background-size: cover !important;
+background-position: center !important;
+width: 100% !important;
+height: 240px !important;
+border: 20px solid transparent !important;
+outline: 3px solid #558d84 !important;
+outline-offset: -20px !important;
+border-radius: 10px !important;
+padding: 20px !important;
+margin-bottom: 20px !important;
+box-sizing: border-box !important;
+overflow-y: auto !important;
+line-height: 1.6 !important;
+text-align: center !important;
+display: block !important;
+transition: box-shadow 0.3s ease-in-out !important;
+box-shadow: 0 0 0 rgba(255, 255, 255, 0) !important;
+}
+
+.columnSplit {
+display: flex !important;
+justify-content: space-between !important;
+width: 100% !important;
+background: transparent !important;
+border: none !important;
+padding: 0 !important;
+box-shadow: none !important;
+}
+
+.smallBox {
+background-size: cover !important;
+background-position: center !important;
+width: 100% !important;
+height: 240px !important;
+border: 20px solid transparent !important;
+outline: 3px solid #558d84 !important;
+outline-offset: -20px !important;
+border-radius: 10px !important;
+padding: 20px !important;
+margin-bottom: 20px !important;
+box-sizing: border-box !important;
+overflow-y: auto !important;
+line-height: 1.6 !important;
+text-align: center !important;
+display: block !important;
+}
+
+/* Hovers */
+.bigBox::after, .smallBox::after {
+content: none !important;
+}
+
+.bigBox:hover, .smallBox:hover {
+box-shadow: 0 0 15px rgba(56, 232, 221, 0.8) !important;
+}
+
+@media only screen and (max-width: 768px) {
+.bigBox, .smallBox {
+font-size: 10px !important;
+padding: 12px !important;
+word-wrap: break-word !important;
+white-space: normal !important;
+}
+}
